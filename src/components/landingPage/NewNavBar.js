@@ -48,7 +48,7 @@ export default function NewNavBar() {
           id="toggle nav"
           aria-label="toggle nav"
           showIn="xs"
-          onClick={toggleNav}
+          onPress={toggleNav}
         >
           {toggleIcons.showHamburger === true ? (
             <Image
