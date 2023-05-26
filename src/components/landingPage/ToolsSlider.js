@@ -37,12 +37,12 @@ const ToolsSlider = ({ windowWidth }) => {
         animate="end"
         className="fullWidth paddingY removeBtmPaddingOnLgScreen maxWidth1300"
       >
-        <motion.h4
+        <motion.p
           variants={animationStaggerFadeIn}
-          className="paddingx centerOnLgScreen paddingBottomOnLgScreen"
+          className="paddingx centerOnLgScreen paddingBottomOnLgScreen largeTextHeading"
         >
           Highly proficient with:
-        </motion.h4>
+        </motion.p>
         {windowWidth >= 500 ? (
           <motion.div
             variants={animationStaggerFadeIn}

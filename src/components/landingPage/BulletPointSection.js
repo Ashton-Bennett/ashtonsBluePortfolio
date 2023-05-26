@@ -8,7 +8,7 @@ const BulletPointSection = () => {
   return (
     <section className="bulletSectionOnLgScreen">
       <div className="paddingx column alignCenter switchToRowOnLg spaceAround flexEnd removePadding maxWidth1300">
-        <Card className="cardBtm maxWidth3 gradient">
+        <Card role="article" className="cardBtm maxWidth3 gradient">
           <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
             <div className="column">
               <p className="ltGreyText">Building applications with</p>
@@ -40,7 +40,10 @@ const BulletPointSection = () => {
           </Card.Footer>
         </Card>
 
-        <Card className="marginTopMd cardBtm maxWidth3 marginMiddleCard">
+        <Card
+          role="article"
+          className="marginTopMd cardBtm maxWidth3 marginMiddleCard"
+        >
           <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
             <div className="column">
               <p className="ltGreyText">Ensuring Projects are</p>
@@ -69,7 +72,7 @@ const BulletPointSection = () => {
           </Card.Footer>
         </Card>
 
-        <Card className="marginTopMd cardBtm maxWidth3">
+        <Card role="article" className="marginTopMd cardBtm maxWidth3">
           <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
             <div className="column">
               <p className="ltGreyText">No matter the screen size</p>

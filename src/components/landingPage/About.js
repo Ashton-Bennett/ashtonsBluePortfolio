@@ -17,7 +17,9 @@ const About = () => {
         innovative and cutting-edge solutions that align with modern web
         development standards.
       </p>
-      <h4 className="paddingTopMd width600">Personal Snapshots</h4>
+      <p className="paddingTopMd width600 largeTextHeading">
+        Personal Snapshots
+      </p>
       <ul className="noMargin marginTop width600">
         <li className="greyText">
           <span role="img" aria-label="guitar">
