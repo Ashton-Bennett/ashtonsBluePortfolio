@@ -112,7 +112,7 @@ export default function NewNavBar() {
         <Navbar.Collapse>
           <Navbar.CollapseItem className="hoverBlueText">
             <Link
-              id="about me"
+              id="about me on mobile"
               color="inherit"
               href="/#about"
               style={{ textAlign: "center" }}
@@ -121,18 +121,18 @@ export default function NewNavBar() {
             </Link>
           </Navbar.CollapseItem>
           <Navbar.CollapseItem className="hoverBlueText">
-            <Link id="projects" color="inherit" href="/#projects">
+            <Link id="projects on mobile" color="inherit" href="/#projects">
               Projects
             </Link>
           </Navbar.CollapseItem>
           <Navbar.CollapseItem className="hoverBlueText">
-            <Link id="blogs" color="inherit" href="/#blogs">
+            <Link id="blogs on mobile" color="inherit" href="/#blogs">
               Blogs
             </Link>
           </Navbar.CollapseItem>
           <Navbar.CollapseItem className="hoverBlueText">
             <Link
-              id="resume"
+              id="resume on mobile"
               color="inherit"
               href="/ashton.bennett.resume.pdf"
               target="_blank"
@@ -141,7 +141,7 @@ export default function NewNavBar() {
             </Link>
           </Navbar.CollapseItem>
           <Navbar.CollapseItem>
-            <Link id="collaborate" color="inherit" href="/#contact">
+            <Link id="collaborate on mobile" color="inherit" href="/#contact">
               <ButtonBlue size={"sm"} text={"Collaborate"} />
             </Link>
           </Navbar.CollapseItem>
