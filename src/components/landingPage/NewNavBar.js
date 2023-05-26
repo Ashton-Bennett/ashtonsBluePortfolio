@@ -74,17 +74,22 @@ export default function NewNavBar() {
           style={{ justifyItems: "flex-end" }}
         >
           <motion.div variants={animationStaggerFadeIn}>
-            <Navbar.Link href="/#about" className="hoverBlueText">
+            <Navbar.Link id="about me" href="/#about" className="hoverBlueText">
               About Me
             </Navbar.Link>
           </motion.div>
           <motion.div variants={animationStaggerFadeIn}>
-            <Navbar.Link href="/#projects" className="hoverBlueText">
+            <Navbar.Link
+              id="projects"
+              href="/#projects"
+              className="hoverBlueText"
+            >
               Projects
             </Navbar.Link>
           </motion.div>
           <motion.div variants={animationStaggerFadeIn}>
             <Navbar.Link
+              id="resume"
               href="/ashton.bennett.resume.pdf"
               target="_blank"
               className="hoverBlueText"
@@ -93,12 +98,12 @@ export default function NewNavBar() {
             </Navbar.Link>
           </motion.div>
           <motion.div variants={animationStaggerFadeIn}>
-            <Navbar.Link href="/#blogs" className="hoverBlueText">
+            <Navbar.Link id="blogs" href="/#blogs" className="hoverBlueText">
               Blogs
             </Navbar.Link>
           </motion.div>
           <motion.div className="marginTop" variants={animationStaggerFadeIn}>
-            <Navbar.Link href="/#contact">
+            <Navbar.Link id="collaborate" href="/#contact">
               <ButtonBlue size={"xs"} text={"Collaborate"} />
             </Navbar.Link>
           </motion.div>
@@ -107,6 +112,7 @@ export default function NewNavBar() {
         <Navbar.Collapse>
           <Navbar.CollapseItem className="hoverBlueText">
             <Link
+              id="about me"
               color="inherit"
               href="/#about"
               style={{ textAlign: "center" }}
@@ -115,17 +121,18 @@ export default function NewNavBar() {
             </Link>
           </Navbar.CollapseItem>
           <Navbar.CollapseItem className="hoverBlueText">
-            <Link color="inherit" href="/#projects">
+            <Link id="projects" color="inherit" href="/#projects">
               Projects
             </Link>
           </Navbar.CollapseItem>
           <Navbar.CollapseItem className="hoverBlueText">
-            <Link color="inherit" href="/#blogs">
+            <Link id="blogs" color="inherit" href="/#blogs">
               Blogs
             </Link>
           </Navbar.CollapseItem>
           <Navbar.CollapseItem className="hoverBlueText">
             <Link
+              id="resume"
               color="inherit"
               href="/ashton.bennett.resume.pdf"
               target="_blank"
@@ -134,7 +141,7 @@ export default function NewNavBar() {
             </Link>
           </Navbar.CollapseItem>
           <Navbar.CollapseItem>
-            <Link color="inherit" href="/#contact">
+            <Link id="collaborate" color="inherit" href="/#contact">
               <ButtonBlue size={"sm"} text={"Collaborate"} />
             </Link>
           </Navbar.CollapseItem>
