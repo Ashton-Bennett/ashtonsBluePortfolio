@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import { createTheme, NextUIProvider } from "@nextui-org/react";
-
+import { Analytics } from "@vercel/analytics/react";
 const theme = createTheme({
   type: "light", // it could be "light" or "dark"
   theme: {
@@ -36,6 +36,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <NextUIProvider theme={theme}>
       <Component {...pageProps} />
+      <Analytics />
     </NextUIProvider>
   );
 }
