@@ -74,13 +74,17 @@ export default function NewNavBar() {
           style={{ justifyItems: "flex-end" }}
         >
           <motion.div variants={animationStaggerFadeIn}>
-            <Navbar.Link id="about me" href="/#about" className="hoverBlueText">
+            <Navbar.Link
+              id="about me link"
+              href="/#about"
+              className="hoverBlueText"
+            >
               About Me
             </Navbar.Link>
           </motion.div>
           <motion.div variants={animationStaggerFadeIn}>
             <Navbar.Link
-              id="projects"
+              id="projects link"
               href="/#projects"
               className="hoverBlueText"
             >
@@ -89,7 +93,7 @@ export default function NewNavBar() {
           </motion.div>
           <motion.div variants={animationStaggerFadeIn}>
             <Navbar.Link
-              id="resume"
+              id="resume link"
               href="/ashton.bennett.resume.pdf"
               target="_blank"
               className="hoverBlueText"
@@ -98,12 +102,16 @@ export default function NewNavBar() {
             </Navbar.Link>
           </motion.div>
           <motion.div variants={animationStaggerFadeIn}>
-            <Navbar.Link id="blogs" href="/#blogs" className="hoverBlueText">
+            <Navbar.Link
+              id="blogs link"
+              href="/#blogs"
+              className="hoverBlueText"
+            >
               Blogs
             </Navbar.Link>
           </motion.div>
           <motion.div className="marginTop" variants={animationStaggerFadeIn}>
-            <Navbar.Link id="collaborate" href="/#contact">
+            <Navbar.Link id="collaborate link" href="/#contact">
               <ButtonBlue size={"xs"} text={"Collaborate"} />
             </Navbar.Link>
           </motion.div>

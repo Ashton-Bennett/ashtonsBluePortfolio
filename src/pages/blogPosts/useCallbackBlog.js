@@ -4,6 +4,7 @@ import callbackImage from "public/images/blogs/callbackImage.jpg";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import AvatarAshton from "@/components/blogs/Avatar";
 import { Card } from "@nextui-org/react";
+import Head from "next/head";
 
 const exampleSyntaxCode = `
 //Primitive comparisons:
@@ -53,6 +54,23 @@ const exampleCodeThree = `const buildArray = useCallback(() => [num1, num2], [nu
 const useCallbackBlog = () => {
   return (
     <div className="rowOnLgScreen spaceAround">
+      <Head>
+        <title>Ashton Bennett|Blog</title>
+        <meta
+          name="description"
+          content="Ashton Bennett's Web Developer Portfolio"
+          key="desc"
+        />
+
+        <meta property="og:title" content="Ashton Bennett's Portfolio" />
+        <meta
+          property="og:description"
+          content="Access to projects, technical blogs, and information."
+        />
+        <meta property="og:image" content="/public/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" sizes="32x32" href="/favicon.ico" />
+      </Head>
       <div className="padding maxWidth1300">
         <section className="column alignCenter paddingBottom">
           <h1 className="paddingBottomSm">UseCallback Hook</h1>

@@ -36,7 +36,15 @@ export default function Home() {
         <meta
           name="description"
           content="Ashton Bennett's Web Developer Portfolio"
+          key="desc"
         />
+
+        <meta property="og:title" content="Ashton Bennett's Portfolio" />
+        <meta
+          property="og:description"
+          content="Access to projects, technical blogs, and information."
+        />
+        <meta property="og:image" content="/public/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" sizes="32x32" href="/favicon.ico" />
       </Head>

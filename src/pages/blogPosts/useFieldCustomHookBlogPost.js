@@ -6,6 +6,7 @@ import xIcon from "public/images/blogs/iconmonstr-x-mark-1-240.png";
 import checkIcon from "public/images/blogs/iconmonstr-check-mark-15-240.png";
 import AvatarAshton from "@/components/blogs/Avatar";
 import { Card } from "@nextui-org/react";
+import Head from "next/head";
 
 const exampleSyntaxCode = `const App = () => {
     const [name,setName] = useState("")
@@ -80,6 +81,23 @@ const excFive = `const clearForm = (event) => {
 const useFieldCustomHookBlogPost = () => {
   return (
     <div className="rowOnLgScreen spaceAround">
+      <Head>
+        <title>Ashton Bennett|Blog</title>
+        <meta
+          name="description"
+          content="Ashton Bennett's Web Developer Portfolio"
+          key="desc"
+        />
+
+        <meta property="og:title" content="Ashton Bennett's Portfolio" />
+        <meta
+          property="og:description"
+          content="Access to projects, technical blogs, and information."
+        />
+        <meta property="og:image" content="/public/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" sizes="32x32" href="/favicon.ico" />
+      </Head>
       <div className="padding maxWidth1300">
         <section className="column alignCenter paddingBottom">
           <h1 className="paddingBottomSm">UseField Custom Hook</h1>
