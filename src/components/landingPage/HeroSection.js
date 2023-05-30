@@ -21,8 +21,8 @@ export default function HeroSection({ windowWidth }) {
           <Image
             priority
             className="portfolioImg"
-            width={windowWidth <= 1300 ? 231 : 300}
-            height={windowWidth <= 1300 ? 264 : 330}
+            width={windowWidth <= 1300 ? 300 : 330}
+            height={windowWidth <= 1300 ? 330 : 360}
             src={ashtonPic}
             alt="Ashton Bennett"
           />

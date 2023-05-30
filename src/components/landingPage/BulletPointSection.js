@@ -11,7 +11,7 @@ const BulletPointSection = () => {
         <Card role="article" className="cardBtm maxWidth3 gradient">
           <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
             <div className="column">
-              <p className="ltGreyText">Building applications with</p>
+              <p className="whiteText">Building applications with</p>
               <h3 className="whiteText">
                 Lightning Fast<br></br> Performance
               </h3>
@@ -46,7 +46,7 @@ const BulletPointSection = () => {
         >
           <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
             <div className="column">
-              <p className="ltGreyText">Ensuring Projects are</p>
+              <p className="whiteText">Ensuring Projects are</p>
               <h3 className="whiteText">
                 Accessible To <br></br>Everyone
               </h3>
@@ -75,7 +75,7 @@ const BulletPointSection = () => {
         <Card role="article" className="marginTopMd cardBtm maxWidth3">
           <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
             <div className="column">
-              <p className="ltGreyText">No matter the screen size</p>
+              <p className="whiteText">No matter the screen size</p>
               <h3 className="whiteText textCap">Visually Stunning</h3>
             </div>
           </Card.Header>
