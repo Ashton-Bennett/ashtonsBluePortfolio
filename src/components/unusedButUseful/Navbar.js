@@ -2,7 +2,6 @@ import Image from "next/image";
 import logo from "../../public/logo-removebg-preview.png";
 import Link from "next/link";
 import hamburgerIcon from "../../public/hamburgericon.png";
-
 export default function NavBar() {
   return (
     <nav className="navbar navbar-expand-md bg-body-tertiary">
