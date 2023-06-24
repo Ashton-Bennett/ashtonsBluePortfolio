@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import { createTheme, NextUIProvider } from "@nextui-org/react";
 import { Analytics } from "@vercel/analytics/react";
+import Head from "next/head";
 const theme = createTheme({
   type: "light", // it could be "light" or "dark"
   theme: {
@@ -34,10 +35,29 @@ const theme = createTheme({
 });
 function MyApp({ Component, pageProps }) {
   return (
-    <NextUIProvider theme={theme}>
-      <Component {...pageProps} />
-      <Analytics />
-    </NextUIProvider>
+    <>
+      <Head>
+        <title>Ashton Bennett</title>
+        <meta
+          name="description"
+          content="Ashton Bennett's Web Developer Portfolio"
+          key="desc"
+        />
+
+        <meta property="og:title" content="Ashton Bennett's Portfolio" />
+        <meta
+          property="og:description"
+          content="Access to projects, technical blogs, and information."
+        />
+        <meta property="og:image" content="/public/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" sizes="32x32" href="/favicon.ico" />
+      </Head>
+      <NextUIProvider theme={theme}>
+        <Component {...pageProps} />
+        <Analytics />
+      </NextUIProvider>
+    </>
   );
 }
 
