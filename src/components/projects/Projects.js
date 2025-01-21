@@ -30,8 +30,8 @@ const Projects = ({ windowWidth }) => {
                 my technical skills.
               </p>
             </Collapse>
-            <FindProviders smallScreen={smallScreen} />
-            <GamesOnMain smallScreen={smallScreen} />
+            {/* <FindProviders smallScreen={smallScreen} />
+            <GamesOnMain smallScreen={smallScreen} /> */}
             <BlogApp smallScreen={smallScreen} />
             <AmpGuitar smallScreen={smallScreen} />
           </Collapse.Group>
