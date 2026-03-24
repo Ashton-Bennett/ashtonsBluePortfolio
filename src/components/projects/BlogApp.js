@@ -5,31 +5,32 @@ import mongoDbIcon from "public/icons/mongodb-icon.svg";
 import nodeIcon from "public/icons/nodejs-icon.svg";
 import reduxIcon from "public/icons/redux.svg";
 import reactLogo from "public/icons/react_icon.svg";
-import blogAppIcon from "public/images/projects/blogAppIcon.png";
-import blogAppImage from "public/images/projects/blog_app.png";
+import theMenuIcon from "public/images/projects/restaurant_menu_FILL0_wght400_GRAD0_opsz48.svg";
+import theMenuAppImage from "public/images/projects/the_menu.png";
 
-const BlogApp = ({ smallScreen }) => {
+const TheMenuApp = ({ smallScreen }) => {
   const { setVisible, bindings } = useModal();
   return (
     <Collapse
       arrowIcon={<Arrow />}
       title={
-        <p className="whiteText fontPlus fontW500 blueOnHover">Blog App</p>
+        <p className="whiteText fontPlus fontW500 blueOnHover">The Menu App</p>
       }
       subtitle={<p className="smallText ltGreyText">Full Stack App</p>}
       contentLeft={
         <Image
-          alt="pencil"
+          alt="chef spoon and fork"
           width={60}
           height={48}
-          src={blogAppIcon}
+          src={theMenuIcon}
           className="borderRad"
         />
       }
     >
       <p className="whiteText">
-        Built as a personal project. I was able to deploy an app that allows
-        users to create an account, share, comment, and delete posts.
+        Created a meal planning app that streamlines weekly cooking using
+        professional chef techniques for a restaurant-quality experience at
+        home.
       </p>
       <br></br>
       <div className="column">
@@ -61,12 +62,12 @@ const BlogApp = ({ smallScreen }) => {
                 className="borderRad projectImage"
                 width={400}
                 height={300}
-                src={blogAppImage}
-                alt="Website screenshot for Blog App"
+                src={theMenuAppImage}
+                alt="Website screenshot for The Menu App"
               />
             </div>
             <section className="column">
-              <h1 className="paddingYSm">{"Blog App"}</h1>
+              <h1 className="paddingYSm">{"The Menu App"}</h1>
               <div className="row flexStart">
                 <div className="row spaceBetween width70">
                   <div className="column">
@@ -112,8 +113,8 @@ const BlogApp = ({ smallScreen }) => {
                 development and to practice using Express, Node, React, Redux,
                 and MongoDB.{" "}
                 <Link
-                  title="go to blog app website"
-                  href="https://blog-app-by-ashton.fly.dev/"
+                  title="go to the menu app website"
+                  href="https://the-menu-by-ashton-bennett.fly.dev/"
                   className="blueText"
                   target="_blank"
                 >
@@ -121,14 +122,11 @@ const BlogApp = ({ smallScreen }) => {
                 </Link>
               </p>
               <p>
-                Blog app will require the user to login. Once validated the user
-                will be able to complete all CRUD operations. They can complete
-                a form that will upload their favorite blog for other users to
-                see, comment, and like. There is also functionality that will
-                allow the user to delete a blog post, but only if they are the
-                user that created that particular blog. If you would like to see
-                the code click&nbsp;
-                <Link
+                The Menu is a menu planning app with user profiles, menu
+                sharing, AI-assisted recipe creation, and Alexa-enabled grocery
+                list management, including automatic list generation from
+                missing ingredients.
+                {/* <Link
                   title="go to github"
                   href="https://github.com/Ashton-Bennett/blog_app"
                   className="blueText"
@@ -136,7 +134,7 @@ const BlogApp = ({ smallScreen }) => {
                 >
                   here
                 </Link>
-                .
+                . */}
               </p>
             </section>
           </>
@@ -153,7 +151,8 @@ const BlogApp = ({ smallScreen }) => {
           >
             Close
           </Button>
-          <Link
+          {/* <Link
+            disabled
             title="go to github"
             href={"https://github.com/Ashton-Bennett/blog_app"}
             target="_blank"
@@ -161,10 +160,10 @@ const BlogApp = ({ smallScreen }) => {
             <Button auto shadow rounded onPress={() => setVisible(false)}>
               GitHub
             </Button>
-          </Link>
+          </Link> */}
           <Link
             title="go to web app"
-            href="https://blog-app-by-ashton.fly.dev/"
+            href="https://the-menu-by-ashton-bennett.fly.dev/"
             target="_blank"
           >
             <Button
@@ -183,4 +182,4 @@ const BlogApp = ({ smallScreen }) => {
   );
 };
 
-export default BlogApp;
+export default TheMenuApp;

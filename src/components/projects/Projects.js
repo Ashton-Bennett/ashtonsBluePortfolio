@@ -1,7 +1,5 @@
 import { Collapse, Grid } from "@nextui-org/react";
-import FindProviders from "./FindProviders";
 import BlogApp from "./BlogApp";
-import GamesOnMain from "./GamesOnMain";
 import AmpGuitar from "./AmpGuitar";
 import { useEffect, useState } from "react";
 
